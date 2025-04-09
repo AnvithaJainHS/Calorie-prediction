@@ -1,0 +1,153 @@
+/* Reset all default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-page background with gradient and food-related image */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://www.example.com/food-background.jpg') no-repeat center center fixed;
+    background-size: cover;  /* Background image covering entire screen */
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main container with a bright overlay */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for better contrast */
+    padding: 50px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling */
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 40px;
+    color: #ff5733;  /* Bright red-orange for a pop of color */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
+    color: #fff;
+}
+
+/* Upload Section */
+.upload-section {
+    background-color: #f0e68c; /* Light yellow background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.upload-section h2 {
+    font-size: 28px;
+    color: #2e8b57;  /* SeaGreen for headings */
+    margin-bottom: 15px;
+}
+
+.upload-section input[type="file"] {
+    margin: 20px 0;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #2e8b57;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.upload-section button {
+    padding: 14px 35px;
+    background-color: #ff6347; /* Bright tomato color */
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-section button:hover {
+    background-color: #ff4500;  /* Darker tomato on hover */
+}
+
+/* Calorie-related image styling */
+.calorie-image {
+    margin-top: 20px;
+}
+
+.calorie-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Results Section */
+.result-section {
+    background-color: #f9c74f; /* Soft yellow-orange for results section */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.result-section h2 {
+    font-size: 32px;
+    color: #e76f51;  /* Bright salmon color for results heading */
+    margin-bottom: 20px;
+}
+
+.result-section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.result-section img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.result-section p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.result-section p strong {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .upload-section h2, .result-section h2 {
+        font-size: 24px;
+    }
+
+    form button {
+        font-size: 18px;
+    }
+
+    result-section img {
+        width: 100%;
+    }
+}
